@@ -136,6 +136,26 @@ span {
   color: #fff;
 }
 
+
+.whatsapp {
+  position: fixed;
+  left: 15px;
+  top: 82%;
+}
+.whatsapp h5{
+  color: white;
+  background: #20b20f;
+  padding: 13px;
+  border-radius: 10px;
+}
+.whatsapp i{
+  font-size: 27px;
+}
+.whatsapp h5:hover{
+  color: #1a7404;
+  background-color: #baffa9;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
