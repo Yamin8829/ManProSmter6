@@ -145,11 +145,11 @@ span {
 .whatsapp h5{
   color: white;
   background: #20b20f;
-  padding: 13px;
+  padding: 10px;
   border-radius: 10px;
 }
 .whatsapp i{
-  font-size: 27px;
+  font-size: 20px;
 }
 .whatsapp h5:hover{
   color: #1a7404;
