@@ -465,7 +465,14 @@
                   data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center">
+                <button type="submit" class="btn-kirim">Send Message</button>
+                
+              <button class="btn btn-primary btn-loading" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+              </div>
             </form>
           </div>
         </div>
@@ -605,7 +612,7 @@
   <div class="whatsapp">
     <a href="https://api.whatsapp.com/send?phone=+62895374683257" target="_blank">
       <h5>
-        <i class="fa fa-whatsapp fa-spin"></i>
+        <i class="fa fa-whatsapp"></i>
       </h5>
     </a>
 
