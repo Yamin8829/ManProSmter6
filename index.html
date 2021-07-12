@@ -449,23 +449,23 @@
           <div class="form">
             <form action="" method="post" role="form" name = "web-nurul-iman"class="contactForm">
               <div class="form-group">
-                <input type="text" name="pengirim" class="form-control" id="name" placeholder="Your Name"
+                <input type="text" name="pengirim" class="form-control" id="name" placeholder="Ketik Nama Anda"
                   data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ketik Email Anda"
                   data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subjek" id="subject" placeholder="Subject"
+                <input type="text" class="form-control" name="subjek" id="subject" placeholder="Ketik Subjek Masalah Anda"
                   data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
                 <textarea class="form-control" name="pesan" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                  data-msg="Please write something for us" placeholder="Ketik Deskripsi Masalah Anda"></textarea>
                 <div class="validation"></div>
               </div>
               <div class="text-center">
@@ -659,7 +659,8 @@ Send Message
       .then(response => {
        btnKirim.classList.toggle('d-none')
        btnLoading.classList.toggle('d-none')
-  myAlert.classList.toggle('d-none')
+       myAlert.classList.toggle('d-none')
+      form.reset()
       console.log('Success!', response)
     })
       .catch(error => console.error('Error!', error.message))
