@@ -443,7 +443,10 @@
 
         <div class="col-lg-5 ml-4 col-md-8">
           <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Thank you!</strong> Your message has been sent.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
             <div id="errormessage"></div>
             <form action="" method="post" role="form" name = "web-nurul-iman"class="contactForm">
               <div class="form-group">
@@ -645,11 +648,15 @@ Send Message
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyEDdwusufpCeGYlj8pmYBLKPOHJ-zC_uAdXIoYjQQByCmqz6oXR2bGl-0HZQGTHK4eFA/exec'
   const form = document.forms['web-nurul-iman']
-
+//   const btnKirim = document.
   form.addEventListener('submit', e => {
     e.preventDefault()
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+      
+      console.log('Success!', response)
+    })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
