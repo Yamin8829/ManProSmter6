@@ -442,7 +442,7 @@
         </div>
 
         <div class="col-lg-5 ml-4 col-md-8">
-            <div class="alert my-alert alert-success alert-dismissible fade show" role="alert">
+            <div class="alert my-alert alert-success alert-dismissible fade show d-none" role="alert">
                    <strong>Thank you!</strong> Your message has been sent.
                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>
@@ -659,6 +659,7 @@ Send Message
       .then(response => {
        btnKirim.classList.toggle('d-none')
        btnLoading.classList.toggle('d-none')
+  myAlert.classList.toggle('d-none')
       console.log('Success!', response)
     })
       .catch(error => console.error('Error!', error.message))
